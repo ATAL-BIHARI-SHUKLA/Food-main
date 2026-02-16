@@ -56,7 +56,6 @@ const Home = () => {
       setAddedToCart((prev) => ({ ...prev, [dish.id]: false }));
     }, 1500);
   };
-
   const scroll = (direction) => {
     if (scrollContainerRef.current) {
       const scrollAmount = direction === "left" ? -400 : 400;
@@ -66,7 +65,6 @@ const Home = () => {
       });
     }
   };
-
   useEffect(() => {
     const savedCart = localStorage.getItem("cartItems");
     if (savedCart) {
